@@ -1,0 +1,23 @@
+<div class="container">
+    <div>
+        <h1 class="main-title">¡Mucha suerte... Ing. Edith!</h1>
+    </div>
+    
+    
+    <div class="animation-container">
+        <h2 class="main-second">{{phrase}}</h2>
+        <img src="assets/studying.gif" alt="">
+    </div>
+
+
+    <div class="buttonSound">   
+        <button *ngIf="!audioStarted" class="sound-button" (click)="playSound()">¿Quieres escucahar algo que te relaje?</button>
+        <button *ngIf="audioStarted" class="sound-button2" (click)="stopSound()">Presiona para pausar el audio</button>
+    </div>
+
+    <div class="credits">
+        <div>--- Intenta resfrescar... hay mas frases</div>
+        <div> Creditos: CDLS</div>
+    </div>
+  </div>
+  
